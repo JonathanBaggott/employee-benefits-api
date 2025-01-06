@@ -44,19 +44,19 @@ The benefit system demonstrates OCP through:
 ## Future improvements:
 
 1. **Single Responsibility Principle**:
-   - Consider separating the employee creation logic from `BenefitServiceImpl` into an `EmployeeService`
+   - Separate the employee creation logic from `BenefitServiceImpl` into an `EmployeeService`
    - Move benefit calculation logic into a separate `BenefitCalculationService`
 
 2. **Open/Closed Principle**:
-   - Consider using a Strategy pattern for benefit calculations
+   - Maybe use a Strategy pattern for benefit calculations
    - Add a `BenefitCalculator` interface that different benefit types can implement
 
 3. **Interface Segregation Principle**:
-   - Consider splitting `BenefitService` into more specific interfaces like `BenefitReader` and `BenefitManager`
+   - Maybe split `BenefitService` into more specific interfaces like `BenefitReader` and `BenefitManager`
    - Create separate DTOs for benefit creation vs benefit viewing
 
 4. **Dependency Inversion**:
-   - Consider adding a `BenefitRepository` to separate benefit persistence from employee persistence
-   - Introduce an abstraction for benefit type resolution instead of direct use of discriminator values
+   - Maybe add a `BenefitRepository` to separate benefit persistence from employee persistence
+   - Use an abstraction for benefit type resolution instead of direct use of discriminator values
 
 
