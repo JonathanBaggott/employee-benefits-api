@@ -1,7 +1,7 @@
 package com.solid.employeebenefits.service.calculator;
 
 import com.solid.employeebenefits.domain.BenefitType;
-import com.solid.employeebenefits.domain.HealthInsurance;
+import com.solid.employeebenefits.domain.benefit.HealthInsurance;
 import com.solid.employeebenefits.service.BenefitCalculator;
 import org.springframework.stereotype.Service;
 

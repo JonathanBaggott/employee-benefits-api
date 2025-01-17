@@ -1,10 +1,10 @@
 package com.solid.employeebenefits.service;
 
-import com.solid.employeebenefits.domain.Benefit;
-import com.solid.employeebenefits.domain.Employee;
+import com.solid.employeebenefits.domain.benefit.Benefit;
+import com.solid.employeebenefits.domain.employee.Employee;
 import com.solid.employeebenefits.dto.BenefitCreationDTO;
 import com.solid.employeebenefits.factory.BenefitFactory;
-import com.solid.employeebenefits.repository.BenefitRepository;
+import com.solid.employeebenefits.repository.benefit.BenefitRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

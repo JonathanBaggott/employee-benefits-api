@@ -1,9 +1,9 @@
 package com.solid.employeebenefits.factory;
 
-import com.solid.employeebenefits.domain.Benefit;
-import com.solid.employeebenefits.domain.HealthInsurance;
-import com.solid.employeebenefits.domain.LifeInsurance;
-import com.solid.employeebenefits.domain.Pension;
+import com.solid.employeebenefits.domain.benefit.Benefit;
+import com.solid.employeebenefits.domain.benefit.HealthInsurance;
+import com.solid.employeebenefits.domain.benefit.LifeInsurance;
+import com.solid.employeebenefits.domain.benefit.Pension;
 import com.solid.employeebenefits.dto.BenefitCreationDTO;
 import org.springframework.stereotype.Component;
 

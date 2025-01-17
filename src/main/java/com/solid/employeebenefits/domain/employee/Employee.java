@@ -1,6 +1,7 @@
-package com.solid.employeebenefits.domain;
+package com.solid.employeebenefits.domain.employee;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.solid.employeebenefits.domain.benefit.Benefit;
 import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.Collections;

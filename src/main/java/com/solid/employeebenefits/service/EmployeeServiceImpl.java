@@ -1,8 +1,8 @@
 package com.solid.employeebenefits.service;
 
-import com.solid.employeebenefits.domain.Employee;
-import com.solid.employeebenefits.exception.EmployeeNotFoundException;
-import com.solid.employeebenefits.repository.EmployeeRepository;
+import com.solid.employeebenefits.domain.employee.Employee;
+import com.solid.employeebenefits.exception.employee.EmployeeNotFoundException;
+import com.solid.employeebenefits.repository.employee.EmployeeRepository;
 import org.springframework.stereotype.Service;
 
 @Service

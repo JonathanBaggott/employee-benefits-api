@@ -1,6 +1,6 @@
-package com.solid.employeebenefits.repository;
+package com.solid.employeebenefits.repository.employee;
 
-import com.solid.employeebenefits.domain.Employee;
+import com.solid.employeebenefits.domain.employee.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

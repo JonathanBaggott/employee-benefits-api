@@ -1,4 +1,4 @@
-package com.solid.employeebenefits.exception;
+package com.solid.employeebenefits.exception.employee;
 
 public class EmployeeNotFoundException extends RuntimeException {
   public EmployeeNotFoundException(String employeeId) {

@@ -1,8 +1,9 @@
-package com.solid.employeebenefits.domain;
+package com.solid.employeebenefits.domain.benefit;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.solid.employeebenefits.domain.employee.Employee;
 import jakarta.persistence.*;
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "type")

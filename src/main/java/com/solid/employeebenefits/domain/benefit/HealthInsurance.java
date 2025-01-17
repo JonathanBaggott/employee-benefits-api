@@ -1,4 +1,4 @@
-package com.solid.employeebenefits.domain;
+package com.solid.employeebenefits.domain.benefit;
 
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;

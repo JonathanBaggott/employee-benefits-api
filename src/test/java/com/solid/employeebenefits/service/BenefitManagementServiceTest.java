@@ -1,10 +1,10 @@
 package com.solid.employeebenefits.service;
 
-import com.solid.employeebenefits.domain.Employee;
-import com.solid.employeebenefits.domain.Pension;
+import com.solid.employeebenefits.domain.employee.Employee;
+import com.solid.employeebenefits.domain.benefit.Pension;
 import com.solid.employeebenefits.dto.BenefitCreationDTO;
 import com.solid.employeebenefits.factory.BenefitFactory;
-import com.solid.employeebenefits.repository.BenefitRepository;
+import com.solid.employeebenefits.repository.benefit.BenefitRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

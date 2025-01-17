@@ -1,7 +1,7 @@
 package com.solid.employeebenefits.config;
 
-import com.solid.employeebenefits.repository.EmployeeRepository;
-import com.solid.employeebenefits.repository.BenefitRepository;
+import com.solid.employeebenefits.repository.employee.EmployeeRepository;
+import com.solid.employeebenefits.repository.benefit.BenefitRepository;
 import com.solid.employeebenefits.service.calculator.BenefitCalculatorFactory;
 import org.mockito.Mockito;
 import org.springframework.boot.SpringBootConfiguration;
