@@ -13,4 +13,12 @@ public class HealthInsurance extends Benefit {
         // Calculate health insurance benefit (e.g., reimbursement)
         return monthlyPremium * 12 * 0.8;
     }
+
+    public double getMonthlyPremium() {
+        return monthlyPremium;
+    }
+
+    public void setMonthlyPremium(double monthlyPremium) {
+        this.monthlyPremium = monthlyPremium;
+    }
 }

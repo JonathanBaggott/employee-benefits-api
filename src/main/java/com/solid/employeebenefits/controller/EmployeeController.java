@@ -1,7 +1,9 @@
 package com.solid.employeebenefits.controller;
 
-import com.solid.employeebenefits.domain.Benefit;
-import com.solid.employeebenefits.service.BenefitService;
+import com.solid.employeebenefits.dto.BenefitDTO;
+import com.solid.employeebenefits.dto.BenefitCreationDTO;
+import com.solid.employeebenefits.service.BenefitReader;
+import com.solid.employeebenefits.service.BenefitManager;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,23 +13,25 @@ import java.util.List;
 @RequestMapping("/employees")
 public class EmployeeController {
 
-    private final BenefitService benefitService;
+    private final BenefitReader benefitReader;
+    private final BenefitManager benefitManager;
 
-    public EmployeeController(BenefitService benefitService) {
-        this.benefitService = benefitService;
+    public EmployeeController(BenefitReader benefitReader, BenefitManager benefitManager) {
+        this.benefitReader = benefitReader;
+        this.benefitManager = benefitManager;
     }
 
     @GetMapping("/{employeeId}/benefits")
-    public ResponseEntity<List<Benefit>> getEmployeeBenefits(@PathVariable String employeeId) {
-        List<Benefit> benefits = benefitService.getBenefitsForEmployee(employeeId);
+    public ResponseEntity<List<BenefitDTO>> getEmployeeBenefits(@PathVariable String employeeId) {
+        List<BenefitDTO> benefits = benefitReader.getBenefitsForEmployee(employeeId);
         return ResponseEntity.ok(benefits);
     }
 
     @PostMapping("/{employeeId}/benefits")
     public ResponseEntity<Void> addEmployeeBenefit(
         @PathVariable String employeeId,
-        @RequestBody Benefit benefit) {
-        benefitService.addBenefitToEmployee(employeeId, benefit);
+        @RequestBody BenefitCreationDTO benefit) {
+        benefitManager.addBenefitToEmployee(employeeId, benefit);
         return ResponseEntity.ok().build();
     }
 }

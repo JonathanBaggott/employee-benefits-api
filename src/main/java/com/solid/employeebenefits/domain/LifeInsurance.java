@@ -13,4 +13,12 @@ public class LifeInsurance extends Benefit {
         // Calculate life insurance amount based on coverage
         return coverageAmount * 0.01;
     }
+
+    public double getCoverageAmount() {
+        return coverageAmount;
+    }
+
+    public void setCoverageAmount(double coverageAmount) {
+        this.coverageAmount = coverageAmount;
+    }
 }
